@@ -1,11 +1,18 @@
 import React from 'react';
+import '../../style/widget.scss';
 
-function Widgets({data}) {
+function Widgets({ data }) {
 
   return (
     <div className="Widgets">
-        {data.name}
-        {data.value}
+      <div className="container">
+        <div className="widget-name">
+          {data.name}
+        </div>
+        <div className="widget-value">
+          {data.value}
+        </div>
+      </div>
     </div>
   );
 }

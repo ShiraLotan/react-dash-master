@@ -27,7 +27,7 @@ export const fetchData = () => {
 const filterData = (data)=>{
     const filterDataToArr = []
     for (const [key, value] of Object.entries(data.response)) {
-        const row = [value["time"],value["deaths"]["new"],value["deaths"]["total"],value["tests"]["total"],value["cases"]["active"],value["cases"]["critical"]];      
+        const row = [value["cases"]["recovered"],value["time"],value["deaths"]["new"],value["deaths"]["total"],value["tests"]["total"],value["cases"]["active"],value["cases"]["critical"]];      
         filterDataToArr.push(row)
     }
     const newObj = {

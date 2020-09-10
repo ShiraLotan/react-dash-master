@@ -1,0 +1,11 @@
+.Footer{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    img{
+        max-width: 200px;
+        margin: auto;
+    }
+}

@@ -4,15 +4,22 @@ import Widgets from "./Widgets";
 import Chart from "./chart";
 import Footer from "./Footer";
 import RouteBtn from "./RouteBtn";
+import '../../style/dashboard.scss';
 
-function Dashboard({state}) {
+function Dashboard({ state }) {
 
   return (
-    <div>
-        {state ? state.map((x, i)=> <Widgets key={i} data={x}/>): null}
-        { state ? <RouteBtn widgets={state}/> : null}
-        <Chart/>
-        <Footer/>
+    <div className="Dashboard">
+      <div className="widget-wrapper">
+        <div className="widgets-items">
+          {state ? state.map((x, i) => <Widgets key={i} data={x} />) : null}
+        </div>
+        <div className="btn-items">
+          {state ? <RouteBtn widgets={state} /> : null}
+        </div>
+      </div>
+      <Chart />
+      <Footer />
     </div>
   );
 }
