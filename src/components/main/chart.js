@@ -18,13 +18,14 @@ export default function Chart() {
 
   return (
     <div className="Chart">
-      <h1>Check tour statistics:</h1>
+      <h1>Check your statistics:</h1>
       <ResponsiveContainer width="100%" height={500}>
         <BarChart
+        barSize={300}
           data={data}
           barCategoryGap={2}
           margin={{
-            top: 5, right: 400, left: 400, bottom: 5,
+            top: 5, right: 20, left: 10, bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="10 10" />

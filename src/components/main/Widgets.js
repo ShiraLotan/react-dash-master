@@ -10,7 +10,7 @@ function Widgets({ data }) {
           {data.name}
         </div>
         <div className="widget-value">
-          {data.value}
+          <span className="color-value">{data.value}</span>
         </div>
       </div>
     </div>

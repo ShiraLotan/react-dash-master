@@ -17,6 +17,8 @@ function Features({state, setFetchData, signUser}) {
         }
     }, []); // eslint-disable-line react-hooks/exhaustive-deps 
             //PLEASE CHECK README FILE FOR EXTRA DETAILS
+
+            
     return (
         <div className="Features">
             <img className="flier" src="https://img.icons8.com/doodle/48/000000/coronavirus.png" alt="coronavirus"/>

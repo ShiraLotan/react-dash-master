@@ -1,3 +1,25 @@
+App Design:
+
+1. App component is the main container for the entire app.
+
+2. The Chart component can be quite flexible, properties can be easily added.
+
+3. Layout is flex based.
+
+4. External libraries: lodash, react-redux, react-router-dom, recharts, redux, redux-logger, redux-thunk.
+
+5. In Features component 'setFetchData' function located out side of the render. I decided to use Redux-Thunk middleware and for this purpose only
+   i'v located the function outside of the render. This method doesn't depend on variables which it receives from its enclosing closure. Since I'm using 'setFetchData' outside useEffect I disabled the rule using // eslint-disable-next-line react-hooks/exhaustive-deps otherwise I would move the method inside of useEffect
+
+6. Bonus task: for this I used 'Redux-Logger'. After clicking you should see a console data of the state. This feature will be availble
+   in dev mode only.
+
+7. app contains 3 reducers and combind them
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
