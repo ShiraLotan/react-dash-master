@@ -1,9 +1,14 @@
 .Dashboard{
     position: relative;
     top: 70px;
+    overflow: unset;
     .widget-wrapper{
         display: flex;
         justify-content: space-between;
         margin: 0px 10px 0px 25px;
+        @media only screen and (max-width: 676px) {
+            margin: auto;
+        }
     }
 }
+
