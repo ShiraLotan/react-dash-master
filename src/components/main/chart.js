@@ -24,7 +24,7 @@ export default function Chart() {
           data={data}
           barCategoryGap={2}
           margin={{
-            top: 5, right: 10, left: 10, bottom: 5,
+            top: 5, right: 400, left: 400, bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="10 10" />

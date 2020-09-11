@@ -4,15 +4,18 @@
 
 
     img.logo {
-        width: 225px;
-        border: 2px dotted #6b6b6b;
+        width: 170px;
+        height: 100px;
         text-shadow: 2px 2px 4px #000000;
+        border-radius: 100%;
+        border: 1px #000 solid;
+        margin: 10px 20px;
     }
 
     .top-feature-bar {
         background: linear-gradient(#ffffff 90%, #6b6b6b);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         .feature-widgets {
             display: flex;
@@ -23,6 +26,11 @@
         .fa-user {
             font-size: 20px;
             margin: 10px;
+            text-align: center;
+            display: block;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
