@@ -38,3 +38,8 @@ export const fetchDataFaliure = () => {
   }
 }
 
+export const signUserAction = () => {
+  return{
+    type: constants.signUser
+  }
+}

@@ -5,7 +5,8 @@ export const constants= {
     getData: 'GET_DATA',
     fetchRequest: 'FETCH_DATA_REQUEST',
     fetchDataSuccess: 'FETCH_DATA_SUCCESS',
-    fetchDataFailure: 'FETCH_DATA_FAILUER'
+    fetchDataFailure: 'FETCH_DATA_FAILUER',
+    signUser: 'SIGN_USER'
   }
 
 export const tableHeaders = [

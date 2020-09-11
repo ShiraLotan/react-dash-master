@@ -5,7 +5,7 @@ import '../../style/footer.scss';
 export default function Footer(){
     return (
         <div className="Footer">
-            <img src={logo}/>
+            <img src={logo} alt="logo"/>
         </div>
     )
 }   
