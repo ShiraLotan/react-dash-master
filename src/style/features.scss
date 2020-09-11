@@ -1,0 +1,23 @@
+.Features{
+    position: relative;
+    top: 45px;
+    img{
+        width: 225px;
+        border: 2px dotted #6b6b6b;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    .top-feature-bar{
+        background: linear-gradient(#ffffff 90%, #6b6b6b);
+        display: flex;
+        justify-content: space-between;
+        .feature-widgets{
+            display: flex;
+        }
+    }
+    .log-out-bar{
+        .fa-user{
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+}

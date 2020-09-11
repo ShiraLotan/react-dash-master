@@ -1,0 +1,50 @@
+.Info {
+    text-align: center;
+    line-height: 100px;
+    line-height: 40px;
+
+    .info-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .blob {
+            background: rgb(243, 52, 52);
+            border-radius: 50%;
+            margin: 10px;
+            height: 20px;
+            width: 20px;
+
+            box-shadow: 0 0 0 0 rgb(248, 35, 35);
+            transform: scale(1);
+            animation: pulse 2s infinite;
+        }
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        .info-title{
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: underline;
+            margin-right: 7px;
+        }
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}

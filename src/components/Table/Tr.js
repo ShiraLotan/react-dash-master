@@ -2,6 +2,7 @@ import React from "react";
 import Th from "./Th";
 import Td from "./Td";
 import { useHistory } from "react-router-dom";
+import '../../style/grid.scss';
 
 export default function Tr({data, isParent}) {
     let history = useHistory();

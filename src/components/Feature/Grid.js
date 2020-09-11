@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Tr from "../Table/Tr";
 import { tableHeaders } from '../../consts';
+import '../../style/grid.scss';
 
 export default function Grid({ fetchedData }) {
 
     return (
         <div className="Grid">
-            <table>
+            <table className="zigzag">
                 <thead>
                     <Tr isParent={true} data={tableHeaders}/>
                 </thead>

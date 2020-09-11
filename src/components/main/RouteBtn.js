@@ -6,7 +6,7 @@ export default function RouteBtn() {
     const history = useHistory();
 
     return (
-        <div className="RouteBtn">
+        <div className="RouteBtn animation-entrance">
             <div className="container">
                 <span onClick={() => history.push("/feature")}>To Features</span>
             </div>

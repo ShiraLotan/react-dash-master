@@ -7,6 +7,7 @@ import Info from "./Info";
 import Grid from "./Grid";
 import { setData } from '../../state/action';
 import { fetchData } from '../../state/fetch';
+import '../../style/features.scss';
 
 function Features({state, setFetchData}) {
 
@@ -21,10 +22,16 @@ function Features({state, setFetchData}) {
 
     return (
         <div className="Features">
-            <img src={logo} />
-            {state ? state.widgetReducer.widgets.map((w, i) => <Widgets key={i} data={w} />): null}
-            <i className="fas fa-user"></i>
-            {state.dataReducer.data.country && state.dataReducer.data.day ? <Info country={state.dataReducer.data.country} day={state.dataReducer.data.day} /> : null}
+            <div className="top-feature-bar">
+                <img src={logo} />
+                <div className="feature-widgets">
+                {state ? state.widgetReducer.widgets.map((w, i) => <Widgets key={i} data={w} />): null}
+                </div>
+            </div>
+            <div className="log-out-bar">
+                <i className="fas fa-user"></i>
+                {state.dataReducer.data.country && state.dataReducer.data.day ? <Info country={state.dataReducer.data.country} day={state.dataReducer.data.day} /> : null}
+            </div>
             {!_.isEmpty(state.dataReducer.data) ? <Grid fetchedData={state.dataReducer.data.tableRows} /> : null}
         </div>
     )

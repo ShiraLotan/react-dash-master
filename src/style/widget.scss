@@ -1,11 +1,35 @@
 $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
 $transition: 0.6s $cubic;
-   $size: 100px;
+$size: 100px;
 
-.widgets-items{
+.widgets-items {
     display: flex;
 }
-.Widgets, .RouteBtn{
+
+.animation-entrance {
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Widgets,
+.RouteBtn {
     text-align: center;
     background-color: #171717;
     border: 1px solid #171717;
@@ -21,34 +45,38 @@ $transition: 0.6s $cubic;
     justify-content: center;
     align-items: center;
     -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition:         transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
 
     &:hover {
         cursor: pointer;
         width: 105px;
         height: 105px;
-         -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-    .container{
+
+    .container {
         color: #fff;
-        .widget-name, .widget-value{
+
+        .widget-name,
+        .widget-value {
             width: 100%;
-             height: 100%;
-             background-size: 20px;
-             background-repeat: no-repeat;
-             background-position: center;
-             background-color: transparent;
-             display: flex;
-             justify-content: center;
-             transition: all 0.2s ease, background-color 0.4s ease;
-             border-radius: 100%;
-             &:hover {
+            height: 100%;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            transition: all 0.2s ease, background-color 0.4s ease;
+            border-radius: 100%;
+
+            &:hover {
                 background-size: 28px;
                 background-size: 65%;
                 opacity: 1;
-             }
+            }
         }
     }
-    
+
 }

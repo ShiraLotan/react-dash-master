@@ -4,7 +4,7 @@ import '../../style/widget.scss';
 function Widgets({ data }) {
 
   return (
-    <div className="Widgets">
+    <div className="Widgets animation-entrance">
       <div className="container">
         <div className="widget-name">
           {data.name}
